@@ -1,4 +1,10 @@
 ---
 
 - name: "This is test playbook"
-  hosts: back-end-servers
+  hosts: {{class}
+  
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
+    
