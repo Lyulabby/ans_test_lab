@@ -3,3 +3,7 @@
 - name: "This is test playbook"
   hosts: "{{class}}"
   
+- name: Creates directory
+  file:
+    path: /tmp/Vaivode/java_dns/
+    state: directory  
