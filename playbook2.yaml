@@ -3,8 +3,3 @@
 - name: "This is test playbook"
   hosts: {{class}
   
-  tasks:
-  - name: Print debug message
-    debug:
-    msg: "{{text}}"
-    
