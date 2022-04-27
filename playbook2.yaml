@@ -4,6 +4,9 @@
   hosts: "{{class}}"
   
   tasks:
+  -name: Print debug message
+   debug:
+     msg: "{{text}}"
   - name: Creates directory
     file:
       path: /tmp/Vaivode/java_dns/
