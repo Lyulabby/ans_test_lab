@@ -4,10 +4,9 @@
   hosts: "{{class}}"
   
 - name: Creates directory
-  file:
-  path: /tmp/Vaivode/java_dns/
-  state: directory  
+    file:
+    path: /tmp/Vaivode/java_dns/
+    state: directory  
     
 - name: downloads sources
-  get_url:
-      url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/Vaivode/java_dns/
+    get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/Vaivode/java_dns/
