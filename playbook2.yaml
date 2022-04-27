@@ -7,3 +7,8 @@
   file:
     path: /tmp/Vaivode/java_dns/
     state: directory  
+
+- name: Download file from a file path
+  get_url:
+    url: https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar
+    dest: /tmp/Vaivode/java_dns/
