@@ -1,0 +1,13 @@
+---
+
+- name: Echo
+  hosts: "{{class}}"
+  
+  tasks:
+  - name: Creates directory
+    file:
+      path: /tmp/Vaivode/gradle
+      state: directory  
+    
+  - name: downloads sources
+    get_url: url=https://services.gradle.org/distributions/{{gradle_versoion}} dest=/tmp/Vaivode/gradle/{{gradle_version}}
