@@ -1,4 +1,4 @@
 ---
 
 - name: "This is test playbook"
-  hosts: all
+  host: 54.151.35.88
